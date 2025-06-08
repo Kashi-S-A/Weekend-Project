@@ -18,4 +18,9 @@ public class AppException {
 	public ResponseEntity<String> handleCounselorNotFoundException(CounselorNotFoundException e) {
 		return new ResponseEntity<String>(e.getMessage(), HttpStatus.NOT_FOUND);
 	}
+
+	@ExceptionHandler(EnquiryNotFoundException.class)
+	public ResponseEntity<String> handleEnquiryNotFoundException(EnquiryNotFoundException e) {
+		return new ResponseEntity<String>(e.getMessage(), HttpStatus.NOT_FOUND);
+	}
 }

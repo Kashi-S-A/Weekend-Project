@@ -21,6 +21,12 @@ import com.tyss.ca.service.CounselorService;
 
 import jakarta.validation.Valid;
 
+/**
+ * CounselorController handles requests related to counselors. It provides
+ * endpoints for registering, logging in, updating, deleting counselors, and
+ * retrieving inquiries associated with counselors.
+ */
+
 @RestController
 @RequestMapping("/counselor")
 public class CounselorController {
@@ -109,7 +115,7 @@ public class CounselorController {
 	 * 
 	 * @param id   the ID of the counselor
 	 * @param page the page number for pagination
-	 * @return 
+	 * @return
 	 * @return ResponseEntity with counselor details or error message if not found
 	 */
 	@GetMapping("/enquiries/{id}")
