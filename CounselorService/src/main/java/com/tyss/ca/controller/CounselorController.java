@@ -81,10 +81,10 @@ public class CounselorController {
 	 * @param phoneNumber the new phone number for the counselor
 	 * @return ResponseEntity with success message or error message if update fails
 	 */
-	@PutMapping("/updatePhone/{id}")
-	public ResponseEntity<String> updatePhoneNumber(@PathVariable Integer id, @RequestParam String phoneNumber) {
-		return counselorService.updatePhoneNumber(id, phoneNumber);
-	}
+//	@PutMapping("/updatePhone/{id}")
+//	public ResponseEntity<String> updatePhoneNumber(@PathVariable Integer id, @RequestParam String phoneNumber) {
+//		return counselorService.updatePhoneNumber(id, phoneNumber);
+//	}
 
 	/**
 	 * Updates email
@@ -93,10 +93,10 @@ public class CounselorController {
 	 * @param email the new email for the counselor
 	 * @return ResponseEntity with success message or error message if update fails
 	 */
-	@PutMapping("/updateEmail/{id}")
-	public ResponseEntity<String> updateEmail(@PathVariable Integer id, @RequestParam String email) {
-		return counselorService.updateEmail(id, email);
-	}
+//	@PutMapping("/updateEmail/{id}")
+//	public ResponseEntity<String> updateEmail(@PathVariable Integer id, @RequestParam String email) {
+//		return counselorService.updateEmail(id, email);
+//	}
 
 	/**
 	 * Deletes a counselor by ID.

@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tyss.ca.dto.FilterDTO;
 import com.tyss.ca.entity.Enquiry;
 import com.tyss.ca.enums.ClassMode;
-import com.tyss.ca.enums.Course;
-import com.tyss.ca.enums.Status;
 import com.tyss.ca.service.EnquiryService;
 
 import jakarta.validation.Valid;
@@ -63,10 +61,10 @@ public class EnquiryController {
 	 * @return ResponseEntity with the updated enquiry or an error message if the
 	 *         enquiry is not found
 	 */
-	@PutMapping("/update/{id}/status")
-	public ResponseEntity<Enquiry> updateEnquiryStatus(@PathVariable Integer id, @RequestParam Status status) {
-		return enquiryService.updateEnquiryStatus(id, status);
-	}
+//	@PutMapping("/update/{id}/status")
+//	public ResponseEntity<Enquiry> updateEnquiryStatus(@PathVariable Integer id, @RequestParam Status status) {
+//		return enquiryService.updateEnquiryStatus(id, status);
+//	}
 
 	/**
 	 * Updates the course of an enquiry by its ID.
@@ -79,10 +77,10 @@ public class EnquiryController {
 	 * @return ResponseEntity with the updated enquiry or an error message if the
 	 *         enquiry is not found
 	 */
-	@PutMapping("/update/{id}/course")
-	public ResponseEntity<Enquiry> updateEnquiryCourse(@PathVariable Integer id, @RequestParam Course course) {
-		return enquiryService.updateEnquiryCourse(id, course);
-	}
+//	@PutMapping("/update/{id}/course")
+//	public ResponseEntity<Enquiry> updateEnquiryCourse(@PathVariable Integer id, @RequestParam Course course) {
+//		return enquiryService.updateEnquiryCourse(id, course);
+//	}
 
 	/**
 	 * Updates the phone of an enquiry by its ID.
@@ -92,10 +90,10 @@ public class EnquiryController {
 	 * @return ResponseEntity with the updated enquiry or an error message if the
 	 *         enquiry is not found
 	 */
-	@PutMapping("/update/{id}/phone")
-	public ResponseEntity<Enquiry> updateEnquiryPhone(@PathVariable Integer id, @RequestParam Long phoneNumber) {
-		return enquiryService.updateEnquiryPhone(id, phoneNumber);
-	}
+//	@PutMapping("/update/{id}/phone")
+//	public ResponseEntity<Enquiry> updateEnquiryPhone(@PathVariable Integer id, @RequestParam Long phoneNumber) {
+//		return enquiryService.updateEnquiryPhone(id, phoneNumber);
+//	}
 
 	/**
 	 * Filters enquiries based on the provided filter criteria.
